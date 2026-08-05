@@ -1,0 +1,20 @@
+{
+  "name": "coursera_fullstack",
+  "version": "1.0.0",
+  "description": "primer proyecto full stack node js",
+  "homepage": "https://github.com/nicolasmorenocr/coursera_fullstack#readme",
+  "bugs": {
+    "url": "https://github.com/nicolasmorenocr/coursera_fullstack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasmorenocr/coursera_fullstack.git"
+  },
+  "license": "ISC",
+  "author": "Nicolas Moreno",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
