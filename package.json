@@ -5,7 +5,8 @@
   "homepage": "https://github.com/nicolasmorenocr/coursera_fullstack#readme",
   "bugs": {
     "url": "https://github.com/nicolasmorenocr/coursera_fullstack/issues"
-  },
+  }, 
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicolasmorenocr/coursera_fullstack.git"
@@ -15,6 +16,11 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
