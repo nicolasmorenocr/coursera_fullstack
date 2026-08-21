@@ -15,7 +15,9 @@
     <title>Hoteles</title>
 </head>
 
-<body>
+<body
+    style=" background: linear-gradient(90deg, rgba(0, 62, 133, 1) 0%, rgba(46, 142, 184, 1) 26%, rgba(69, 204, 222, 1) 70%, rgba(0, 255, 247, 1) 100%);">
+    <!--Nav bar-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand " href="#">Hoteles</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -24,148 +26,244 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item "><a class="nav-link active" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="./precios.html">precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li>
                 <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
-
-    <div class="jumbotron d-flex align-items-center">
-        <h1>Hoteles</h1>
+    <!-- Header -->
+    <div class="jumbotron d-sm-flex align-items-center justify-content-end flex-column">
+        <div class="bd pt-3 ">
+            <h1 class="titulo">Hoteles</h1>
+        </div>
+        <div class="bd-highlight ">
+            <img src="./images/Index/Ornamento.png" height="40" width="600" class="img-fluid">
+        </div>
     </div>
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Home</li>
-            </ol>
-        </nav>
+    <!-- Contenedor de todo el contenido principal (exceptuando el Footer) -->
+    <div class="container mb-5 mt-5 main-container">
         <div class="row">
-            <div class="col-sm-4">
-                <h3>¿Como funciona?</h3>
-                <p>Dale a los botoenes de cada uno de los hoteles y descubrelo</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>¿Donde estamos ubicados?</h3>
-                <p>Nuestras oficinas principales se encuentran en Bogotá Colombia, en diversas aprtes de la ciudad!</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>¿Por qué elegirnos?</h3>
-                <p>Somos lideres globales, compitiendo con gigantes como airbnb, nuestros precios son insuperable y
-                    nuestro servicio el mejor</p>
+            <div class="col-auto ">
+                <!-- el breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb pt-3 pb-1 ps-1 pe-1" style="background-color: rgba(0, 62, 133, 1);">
+                        <li class="breadcrumb-  item active" aria-current="page">
+                            <p style="color: aliceblue;">Home</p>
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </div>
-
-        <div class="d-flex flex-wrap">
+        <!-- labels del index -->
+        <div class="row p-5">
+            <div class="col-sm-4 ">
+                <div class="d-flex flex-column align-items-center label-index "
+                    style="height: 100%; border-radius: 50px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.12);">
+                    <h3 class="text-label-index pt-2">¿Como funciona?</h3>
+                    <hr style="width: 100%; height: 2px; background-color: #ffffff; border: none; opacity: 1;">
+                    <p class="text-label-index" style="text-align:center;">Dale a los botones de cada uno de los hoteles
+                        y descubrelo</p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="d-flex flex-column align-items-center label-index "
+                    style="height: 100%; border-radius: 50px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <h3 class="text-label-index pt-2">¿Donde estamos ubicados?</h3>
+                    <hr style="width: 100%; height: 2px; background-color: #ffffff; border: none; opacity: 1;">
+                    <p class="text-label-index" style="text-align:center;">Nuestras oficinas principales se encuentran
+                        en Bogotá Colombia, en diversas aprtes de la ciudad!</p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="d-flex flex-column align-items-center  label-index"
+                    style="height: 100%; border-radius: 50px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <h3 class="text-label-index pt-2">¿Por qué elegirnos?</h3>
+                    <hr style="width: 100%; height: 2px; background-color: #ffffff; border: none; opacity: 1;">
+                    <p class="text-label-index" style=" text-align:center;">Somos lideres globales, compitiendo con
+                        gigantes como airbnb,
+                        nuestros
+                        precios son insuperable y
+                        nuestro servicio el mejor</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5 ">
+            <div class="col-4">
+                <hr style="background-color: #ffffff; height: 5px; border: none; opacity: 1; width:100%;" class="mt-4">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <h1>Salones disponibles</h1>
+            </div>
+            <div class="col-4">
+                <hr style="background-color: #ffffff; height: 5px; border: none; opacity: 1; width:100%;" class="mt-4">
+            </div>
+        </div>
+        <!-- Cartas flex -->
+        <div class="d-flex flex-wrap justify-content-center">
             <div class="card cardhotel d-flex flex-column justify-content-between ">
-                <div class="card-header">Bogotá</div>
+                <div class="card-header text-card-title">Bogotá</div>
                 <img src="./images/decameron.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-
-                    <h3 class="card-title">Las palmas</h3>
-                    <h6 class="card-subtitle">El más famoso de Bogotá</h6>
-                    <p>En bogotá</p>
-                    <p>Con el dueño Mordekaiser</p>
-                    <p>Cerca de la avenida caracas</p>
+                    <h3 class="card-title text-card-title">Las palmas</h3>
+                    <h6 class="card-subtitle text-card-title">El más famoso de Bogotá</h6>
+                    <p class="text-label-index">En bogotá</p>
+                    <p class="text-label-index">Con el dueño Mordekaiser</p>
+                    <p class="text-label-index">Cerca de la avenida caracas</p>
                 </div>
                 <button class="btn btn-primary ">ver más</button>
             </div>
-            <div class="card cardhotel d-flex flex-column justify-content-between">
-                <div class="card-header">Barranquilla</div>
+            <div class="card cardhotel d-flex flex-column justify-content-center   ">
+                <div class="card-header">
+                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Barranquilla</p>
+                </div>
                 <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-                    <h3>Decameron</h3>
-                    <p>En Barranquilla</p>
-                    <p>con el deuño Abelardo</p>
-                    <p>Cerca a la calle "palo de mango"</p>
+                    <h3 class="text-card-title card-title">Decameron</h3>
+                    <p class="text-label-index"><span class="oi oi-home pe-2"></span> En Barranquilla
+                    </p>
+                    <p class="text-label-index"><span class="oi oi-person pe-2"></span> con el deuño Abelardo</p>
+                    <p class="text-label-index"><span class="oi oi-compass pe-2"></span> a la calle "palo de mango"</p>
                 </div>
                 <button class="btn btn-primary">ver más</button>
             </div>
             <div class="card cardhotel d-flex flex-column justify-content-between ">
-                <div class="card-header">Barrancabermeja</div>
+                <div class="card-header">
+                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Barrancabermeja</p>
+                </div>
                 <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-                    <h3>Barrancabermeja</h3>
-                    <p>En sincelejo</p>
-                    <p>Con el dueño barramejo</p>
-                    <p>Cerca a la avenida ecopetrol</p>
+                    <h3 class="card-title text-card-title">Decameron</h3>
+                    <p class="text-label-index"><span class="oi oi-home pe-2"></span> En Barranquilla
+                    </p>
+                    <p class="text-label-index"><span class="oi oi-person pe-2"></span> con el deuño Abelardo</p>
+                    <p class="text-label-index"><span class="oi oi-compass pe-2"></span> a la calle "palo de mango"</p>
                 </div>
                 <button class="btn btn-primary">ver más</button>
             </div>
             <div class="card cardhotel">
-                <div class="card-header">Bogotá</div>
+                <div class="card-header">
+                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Bogota</p>
+                </div>
                 <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-                    <h3 class="card-title">Maryland</h3>
-                    <p class="card-text">En bogotá</p>
-                    <p class="card-text">Con la dueña Sofia</p>
-                    <p class="card-text">Al lado de conecta</p>
+                    <h3 class="card-title text-card-title">Maryland</h3>
+                    <p class="card-text text-label-index"><span class="oi oi-home pe-2"></span> En bogotá</p>
+                    <p class="card-text text-label-index"><span class="oi oi-person pe-2"></span> Con la dueña Sofia</p>
+                    <p class="card-text text-label-index"><span class="oi oi-compass pe-2"></span> Al lado de conecta
+                    </p>
                     <button class="btn btn-primary w-100">ver más</button>
                 </div>
             </div>
+        </div>
+        <div class="row mb-5 ">
+            <div class="col-4">
+                <hr style="background-color: #ffffff; height: 5px; border: none; opacity: 1; width:100%;" class="mt-4">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <h1>Salones disponibles</h1>
+            </div>
+            <div class="col-4">
+                <hr style="background-color: #ffffff; height: 5px; border: none; opacity: 1; width:100%;" class="mt-4">
+            </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="card cardhotel d-flex flex-column justify-content-between ">
+                <div class="card-header text-card-title">Bogotá</div>
+                <img src="./images/decameron.jpg" class="card-img-top" alt="Maryland">
+                <div class="card-body">
+                    <h3 class="card-title text-card-title">Las palmas</h3>
+                    <h6 class="card-subtitle text-card-title">El más famoso de Bogotá</h6>
+                    <p class="text-label-index">En bogotá</p>
+                    <p class="text-label-index">Con el dueño Mordekaiser</p>
+                    <p class="text-label-index">Cerca a la avenida caracas</p>
+                </div>
+                <button class="btn btn-primary ">ver más</button>
+            </div>
             <div class="card cardhotel d-flex flex-column justify-content-between">
-                <div class="card-header">Cartagena</div>
+                <div class="card-header text-card-title">Barranquilla</div>
                 <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-                    <h3>Tropel</h3>
-                    <p>En Cartagena</p>
-                    <p>Con el dueño gustavo</p>
-                    <p>Cerca a la playa</p>
+                    <h3 class="text-card-title">Decameron</h3>
+                    <p class="text-label-index ">En Barranquilla</p>
+                    <p class="text-label-index">con el deuño Abelardo</p>
+                    <p class="text-label-index">Cerca a la calle "palo de mango"</p>
                 </div>
                 <button class="btn btn-primary">ver más</button>
             </div>
-            <div class="card cardhotel d-flex flex-column justify-content-between">
-                <div class="card-header">Anorlondo</div>
+            <div class="card cardhotel d-flex flex-column justify-content-between ">
+                <div class="card-header text-card-title">Barrancabermeja</div>
                 <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-                    <h3>Irithyll</h3>
-                    <p>En Anorlondo</p>
-                    <p>Con el dueño Sullivan</p>
-                    <p>Cerca a Lothric</p>
+                    <h3 class="card-title text-card-title">Barrancabermeja</h3>
+                    <p class="text-label-index">En sincelejo</p>
+                    <p class="text-label-index">Con el dueño barramejo</p>
+                    <p class="text-label-index">Cerca a la avenida ecopetrol</p>
                 </div>
-                <button class="btn btn-primary"><span class="oi oi-plus"></span> quiero mi arepa</button>
+                <button class="btn btn-primary">ver más</button>
             </div>
-
+            <div class="card cardhotel">
+                <div class="card-header text-card-title">Bogotá</div>
+                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
+                <div class="card-body">
+                    <h3 class="card-title text-card-title">Maryland</h3>
+                    <p class="text-label-index">En bogotá</p>
+                    <p class="text-label-index">Con la dueña Sofia</p>
+                    <p class="text-label-index">Al lado de conecta</p>
+                </div>
+                <button class="btn btn-primary w-100">ver más</button>
+            </div>
         </div>
-        <footer class="footer">
-            <div class="row">
-                <div class="col-sm-4 d-flex flex-column">
-                    <a href="https:://www.facebook.com/moteleschimba">facebook</a>
-                    <a href="https:://www.twitter.com/moteleschimba">twitter</a>
-                    <a href="https:://www.instagram.com/moteleschimba">instagram</a>
-                    <a href="https:://www.googleplus.com/moteleschimba">googleplus</a>
-                    <a href="https:://www.spotify.com/moteleschimba">spotify</a>
-                </div>
-                <div class="col-sm-3 d-flex flex-column align-items-center">
-                    <address>
-                        <p><span class="oi oi-home iconoFooter"></span>Bogotá-Colombia</p>
-                        <p><span class="oi oi-phone iconoFooter"></span>123456789</p>
-                        <p><span class="oi oi-inbox iconoFooter"></span>contactanos@gmail.com</p>
-                    </address>
-                </div>
-                <div class="col-sm-5 d-flex flex-column align-items-end">
-                    <a href="https:://www.facebook.com/moteleschimba">
-                        <p>us</p>
-                    </a>
-                    <a href="https:://www.twitter.com/moteleschimba">
-                        <p>Get to know us</p>
-                    </a>
-                    <a href="https:://www.instagram.com/moteleschimba">
-                        <p>más</p>
-                    </a>
-                    <a href="https:://www.googleplus.com/moteleschimba">
-                        <p>info</p>
-                    </a>
-                    <a href="https:://www.spotify.com/moteleschimba">
-                        <p>Conocenos</p>
-                    </a>
-                </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="https:://www.facebook.com/moteleschimba">
+                    <p class="footer-text">facebook</p>
+                </a>
+                <a href="https:://www.twitter.com/moteleschimba">
+                    <p class="footer-text">twitter</p>
+                </a>
+                <a href="https:://www.instagram.com/moteleschimba">
+                    <p class="footer-text">instagram</p>
+                </a>
+                <a href="https:://www.googleplus.com/moteleschimba">
+                    <p class="footer-text">googleplus</p>
+                </a>
+                <a href="https:://www.spotify.com/moteleschimba">
+                    <p class="footer-text">spotify</p>
+                </a>
             </div>
-        </footer>
-    </div>
-    </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center">
+                <address>
+                    <p class="footer-text"><span class="oi oi-home iconoFooter"></span>Bogotá-Colombia</p>
+                    <p class="footer-text"><span class="oi oi-phone iconoFooter"></span>123456789</p>
+                    <p class="footer-text"><span class="oi oi-inbox iconoFooter"></span>contactanos@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-5 d-flex flex-column align-items-end">
+                <a href="https:://www.facebook.com/moteleschimba">
+                    <p class="footer-text">us</p>
+                </a>
+                <a href="https:://www.twitter.com/moteleschimba">
+                    <p class="footer-text">Get to know us</p>
+                </a>
+                <a href="https:://www.instagram.com/moteleschimba">
+                    <p class="footer-text">más</p>
+                </a>
+                <a href="https:://www.googleplus.com/moteleschimba">
+                    <p class="footer-text">info</p>
+                </a>
+                <a href="https:://www.spotify.com/moteleschimba">
+                    <p class="footer-text">Conocenos</p>
+                </a>
+            </div>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
