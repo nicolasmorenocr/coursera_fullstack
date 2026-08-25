@@ -57,9 +57,37 @@
                 </nav>
             </div>
         </div>
+        <!-- Botones del collapse -->
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="d-flex flex-column align-items-center">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona"
+                        aria-expanded="false" aria-controls="multiCollapse1">
+                        <p style="color: black;">¿Como funciona? <span class="oi oi-chevron-top"></span></p>
+
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex flex-column align-items-center">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ubicados"
+                        aria-expanded="false" aria-controls="multiCollapse2">
+                        <p style="color: black;">¿Donde estamos ubicados? <span class="oi oi-chevron-top"></span></p>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex flex-column align-items-center">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#elegirnos"
+                        aria-expanded="false" aria-controls="multiCollapse3">
+                        <p style="color: black;">¿Por qué elegirnos? <span class="oi oi-chevron-top"></span></p>
+                    </button>
+                </div>
+            </div>
+        </div>
         <!-- labels del index -->
         <div class="row p-5">
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
                 <div class="d-flex flex-column align-items-center label-index "
                     style="height: 100%; border-radius: 50px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.12);">
                     <h3 class="text-label-index pt-2">¿Como funciona?</h3>
@@ -68,7 +96,7 @@
                         y descubrelo</p>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 collapse multi-collapse" id="ubicados">
                 <div class="d-flex flex-column align-items-center label-index "
                     style="height: 100%; border-radius: 50px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <h3 class="text-label-index pt-2">¿Donde estamos ubicados?</h3>
@@ -77,7 +105,7 @@
                         en Bogotá Colombia, en diversas aprtes de la ciudad!</p>
                 </div>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-4 collapse multi-collapse" id="elegirnos">
                 <div class="d-flex flex-column align-items-center  label-index"
                     style="height: 100%; border-radius: 50px; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <h3 class="text-label-index pt-2">¿Por qué elegirnos?</h3>
@@ -103,58 +131,121 @@
         </div>
         <!-- Cartas flex -->
         <div class="d-flex flex-wrap justify-content-center">
-            <div class="card cardhotel d-flex flex-column justify-content-between ">
-                <div class="card-header text-card-title">Bogotá</div>
-                <img src="./images/decameron.jpg" class="card-img-top" alt="Maryland">
-                <div class="card-body">
-                    <h3 class="card-title text-card-title">Las palmas</h3>
-                    <h6 class="card-subtitle text-card-title">El más famoso de Bogotá</h6>
-                    <p class="text-label-index">En bogotá</p>
-                    <p class="text-label-index">Con el dueño Mordekaiser</p>
-                    <p class="text-label-index">Cerca de la avenida caracas</p>
+            <div class="accordion" id="accordionTarjetas">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseBasica">En Colombia</button>
+                        </h5>
+                    </div>
+                    <div id="collapseBasica" class="collapse" aria-labelledby="headingBasica"
+                        data-bs-parent="#accordionTarjetas">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <!--lo que va dentro del accordion-->
+                            <div class="card cardhotel d-flex flex-column justify-content-between ">
+                                <div class="card-header text-card-title">Bogotá</div>
+                                <img src="./images/decameron.jpg" class="card-img-top" alt="Maryland">
+                                <div class="card-body">
+                                    <h3 class="card-title text-card-title" data-bs-toggle="popover"
+                                        data-bs-placement="top" title="hola" data-bs-content="Baratico">Las palmas</h3>
+                                    <h6 class="card-subtitle text-card-title">El más famoso de Bogotá</h6>
+                                    <p class="text-label-index">En bogotá</p>
+                                    <p class="text-label-index">Con el dueño Mordekaiser</p>
+                                    <p class="text-label-index">Cerca de la avenida caracas</p>
+                                </div>
+                                <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#contacto">ver
+                                    más</button>
+                            </div>
+                            <div class="card cardhotel d-flex flex-column justify-content-center   ">
+                                <div class="card-header">
+                                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Barranquilla</p>
+                                </div>
+                                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
+                                <div class="card-body">
+                                    <h3 class="text-card-title card-title">Decameron</h3>
+                                    <p class="text-label-index"><span class="oi oi-home pe-2"></span> En Barranquilla
+                                    </p>
+                                    <p class="text-label-index"><span class="oi oi-person pe-2"></span> con el deuño
+                                        Abelardo
+                                    </p>
+                                    <p class="text-label-index"><span class="oi oi-compass pe-2"></span> a la calle
+                                        "palo de
+                                        mango"
+                                    </p>
+                                </div>
+                                <button class="btn btn-primary">ver más</button>
+                            </div>
+                            <div class="card cardhotel d-flex flex-column justify-content-between ">
+                                <div class="card-header">
+                                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Barrancabermeja
+                                    </p>
+                                </div>
+                                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
+                                <div class="card-body">
+                                    <h3 class="card-title text-card-title">Decameron</h3>
+                                    <p class="text-label-index"><span class="oi oi-home pe-2"></span> En Barranquilla
+                                    </p>
+                                    <p class="text-label-index"><span class="oi oi-person pe-2"></span> con el deuño
+                                        Abelardo
+                                    </p>
+                                    <p class="text-label-index"><span class="oi oi-compass pe-2"></span> a la calle
+                                        "palo de
+                                        mango"
+                                    </p>
+                                </div>
+                                <button class="btn btn-primary">ver más</button>
+                            </div>
+                            <div class="card cardhotel">
+                                <div class="card-header">
+                                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Bogota</p>
+                                </div>
+                                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
+                                <div class="card-body">
+                                    <h3 class="card-title text-card-title">Maryland</h3>
+                                    <p class="card-text text-label-index"><span class="oi oi-home pe-2"></span> En
+                                        bogotá</p>
+                                    <p class="card-text text-label-index"><span class="oi oi-person pe-2"></span> Con la
+                                        dueña
+                                        Sofia
+                                    </p>
+                                    <p class="card-text text-label-index"><span class="oi oi-compass pe-2"></span> Al
+                                        lado de
+                                        conecta
+                                    </p>
+                                    <button class="btn btn-primary w-100">ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-primary ">ver más</button>
-            </div>
-            <div class="card cardhotel d-flex flex-column justify-content-center   ">
-                <div class="card-header">
-                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Barranquilla</p>
-                </div>
-                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
-                <div class="card-body">
-                    <h3 class="text-card-title card-title">Decameron</h3>
-                    <p class="text-label-index"><span class="oi oi-home pe-2"></span> En Barranquilla
-                    </p>
-                    <p class="text-label-index"><span class="oi oi-person pe-2"></span> con el deuño Abelardo</p>
-                    <p class="text-label-index"><span class="oi oi-compass pe-2"></span> a la calle "palo de mango"</p>
-                </div>
-                <button class="btn btn-primary">ver más</button>
-            </div>
-            <div class="card cardhotel d-flex flex-column justify-content-between ">
-                <div class="card-header">
-                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Barrancabermeja</p>
-                </div>
-                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
-                <div class="card-body">
-                    <h3 class="card-title text-card-title">Decameron</h3>
-                    <p class="text-label-index"><span class="oi oi-home pe-2"></span> En Barranquilla
-                    </p>
-                    <p class="text-label-index"><span class="oi oi-person pe-2"></span> con el deuño Abelardo</p>
-                    <p class="text-label-index"><span class="oi oi-compass pe-2"></span> a la calle "palo de mango"</p>
-                </div>
-                <button class="btn btn-primary">ver más</button>
-            </div>
-            <div class="card cardhotel">
-                <div class="card-header">
-                    <p style="font-weight: bold; color: #ffffff; text-align: center;">Bogota</p>
-                </div>
-                <img src="./images/sample.jpg" class="card-img-top" alt="Maryland">
-                <div class="card-body">
-                    <h3 class="card-title text-card-title">Maryland</h3>
-                    <p class="card-text text-label-index"><span class="oi oi-home pe-2"></span> En bogotá</p>
-                    <p class="card-text text-label-index"><span class="oi oi-person pe-2"></span> Con la dueña Sofia</p>
-                    <p class="card-text text-label-index"><span class="oi oi-compass pe-2"></span> Al lado de conecta
-                    </p>
-                    <button class="btn btn-primary w-100">ver más</button>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseBasica2">Internacional</button>
+
+                        </h5>
+                    </div>
+                    <div div id="collapseBasica2" class="collapse" aria-labelledby="headingBasica"
+                        data-bs-parent="#accordionTarjetas">
+                        <div class="card-body d-flex flex-wrap justify-content-center">
+                            <div class="card cardhotel d-flex flex-column justify-content-between ">
+                                <div class="card-header text-card-title">Panamá</div>
+                                <img src="./images/decameron.jpg" class="card-img-top" alt="Maryland">
+                                <div class="card-body">
+                                    <h3 class="card-title text-card-title">Las palmas</h3>
+                                    <h6 class="card-subtitle text-card-title">El más famoso de Bogotá</h6>
+                                    <p class="text-label-index">En bogotá</p>
+                                    <p class="text-label-index">Con el dueño Mordekaiser</p>
+                                    <p class="text-label-index">Cerca de la avenida caracas</p>
+                                </div>
+                                <button class="btn btn-primary ">ver más</button>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,7 +265,8 @@
                 <div class="card-header text-card-title">Bogotá</div>
                 <img src="./images/decameron.jpg" class="card-img-top" alt="Maryland">
                 <div class="card-body">
-                    <h3 class="card-title text-card-title">Las palmas</h3>
+                    <h3 class="card-title text-card-title" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Baratico">Las palmas</h3>
                     <h6 class="card-subtitle text-card-title">El más famoso de Bogotá</h6>
                     <p class="text-label-index">En bogotá</p>
                     <p class="text-label-index">Con el dueño Mordekaiser</p>
@@ -218,7 +310,35 @@
         </div>
 
     </div>
+    <!--Modal-->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tu email</label>
+                            <input type="email" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Mensaje: </label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success"> Enviar </button>
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
     <footer class="footer">
         <div class="row">
             <div class="col-sm-4 d-flex flex-column">
@@ -269,6 +389,17 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+            [...popoverTriggerList].map(el => new bootstrap.Popover(el));
+
+        });
+    </script>
 </body>
 
 </html>
