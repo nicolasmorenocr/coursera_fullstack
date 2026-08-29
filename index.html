@@ -117,6 +117,7 @@
                 </div>
             </div>
         </div>
+        <!-- Carousel -->
         <div class="row">
             <div class="col">
                 <div class="flex-column d-flex  align-items-center m-5">
@@ -193,7 +194,8 @@
                                     <p class="text-label-index">Con el dueño Mordekaiser</p>
                                     <p class="text-label-index">Cerca de la avenida caracas</p>
                                 </div>
-                                <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#contacto">ver
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contacto"
+                                    id="btnModal">ver
                                     más</button>
                             </div>
                             <div class="card cardhotel d-flex flex-column justify-content-center   ">
@@ -427,7 +429,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -436,6 +437,31 @@
 
             const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
             [...popoverTriggerList].map(el => new bootstrap.Popover(el));
+
+            const modal = document.querySelector('#contacto');
+            const btnModal = document.querySelector('#btnModal')
+
+            modal.addEventListener('show.bs.modal', event => {
+                console.log("Se está abriendo el modal")
+                btnModal.classList.remove('btn-primary');
+                btnModal.classList.add('btn-outline-danger');
+            });
+
+            modal.addEventListener('shown.bs.modal', event => {
+                console.log("Se abrió el modal")
+            });
+
+            modal.addEventListener('hide.bs.modal', event => {
+                console.log("Se está ocultando el modal")
+            });
+
+            modal.addEventListener('hidden.bs.modal', event => {
+                console.log("Se ocultó el modal")
+                btnModal.classList.remove('btn-outline-danger');
+                btnModal.classList.add('btn-primary');
+            });
+
+
 
         });
     </script>
