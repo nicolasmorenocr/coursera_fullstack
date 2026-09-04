@@ -1,73 +1,74 @@
+@charset "UTF-8";
 /* Estilos generales para la pagina*/
 .jumbotron {
-    background: #003e85;
-    background: linear-gradient(90deg, rgba(0, 62, 133, 1) 0%, rgba(46, 142, 184, 1) 26%, rgba(69, 204, 222, 1) 70%, rgba(0, 255, 247, 1) 100%);
-    color: black;
-    margin-top: 50px;
-    font-size: 24px;
-    margin-bottom: 20px;
+  background: #003e85;
+  background: linear-gradient(90deg, rgb(0, 62, 133) 0%, rgb(46, 142, 184) 26%, rgb(69, 204, 222) 70%, rgb(0, 255, 247) 100%);
+  color: black;
+  margin-top: 50px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .footer {
-    padding: 10px 10px 0 10px;
-    background-color: #212328;
-    margin-bottom: 0px;
-    margin-top: 10px
+  padding: 10px 10px 0 10px;
+  background-color: #212328;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
-
 .iconoFooter {
-    padding: 15px;
+  padding: 15px;
 }
 
 .footer-text {
-    color: aliceblue;
-    font-weight: bold;
+  color: aliceblue;
+  font-weight: bold;
 }
 
 .main-container {
-    background-color: lightblue;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: lightblue;
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Estilos de los botones*/
-
 .btn {
-    background-color: #4FC3F7;
-    color: purple;
+  background-color: #4FC3F7;
+  color: purple;
 }
 
 /* del index.html*/
-
 .cardhotel {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding: 5px 5px 5px 5px;
-    background-color: #003e85;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 5px 5px 5px 5px;
+  background-color: #003e85;
 }
 
 .card-img-top {
-    height: 220px;
-    object-fit: cover;
+  height: 220px;
+  object-fit: cover;
 }
-
 
 .titulo {
-    font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-
 .label-index {
-    background-color: #003e85;
+  background-color: #003e85;
 }
 
 .text-label-index {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .text-card-title {
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
 }
+
+/* esto es que ya se guardó enn el main*/
+
+/*# sourceMappingURL=main.css.map */
